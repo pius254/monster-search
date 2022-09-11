@@ -1,6 +1,6 @@
-import Form from "./form.component";
+import FormInput from "./form.component";
 
-const Navbar = () => {
+const Navbar = ({ onChangeHandler }) => {
   return (
     <header className="p-3 text-bg-dark">
       <div className="container">
@@ -43,7 +43,10 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <Form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" />
+          <FormInput
+            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            onChangeHandler={onChangeHandler}
+          />
 
           <div className="text-end">
             <button type="button" className="btn btn-outline-light me-2">
